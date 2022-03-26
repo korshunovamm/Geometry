@@ -334,6 +334,7 @@ IShape& Ray::Move(const Vector& vect) {
   begin_ = {vect.GetX() + begin_.GetX(), vect.GetY() + begin_.GetY()};
   return *this;
 }
+
 bool Ray::ContainsPoint(const Point& point) const {
   Line line(*this);
   if (line.ContainsPoint(point)) {
